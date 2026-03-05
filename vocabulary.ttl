@@ -30,41 +30,42 @@
 <#Email>
     a               rdf:Property ;
     rdfs:label      "email"@en ;
-    rdfs:comment    "An electronic mail address at which a person can be contacted."@en ;
+    rdfs:comment    "an electronic mail address at which a person can be contacted."@en ;
     rdfs:domain     this:Person ;
     rdfs:range      xsd:string .
 
 <#PlaceOfBirth>
     a               rdf:Property ;
     rdfs:label      "place of birth "@en ;
-    rdfs:comment    "The location where a person was born, identified by a URI (e.g. a Wikidata entity)."@en ;
+    rdfs:comment    "the location where a person was born, identified by a URI (e.g. a Wikidata entity)."@en ;
     rdfs:domain     this:Person ;
     rdfs:range      rdfs:Resource .
 
 <#CityOfResidence>
     a               rdf:Property ;
     rdfs:label      "city of residence"@en ;
-    rdfs:comment    "The current place of residence or primary location of a person, identified by a URI."@en ;
+    rdfs:comment    "the current place of residence or primary location of a person, identified by a URI."@en ;
     rdfs:domain     this:Person ;
     rdfs:range      rdfs:Resource .
 
 <#Sport>
     a               rdf:Property ;
     rdfs:label      "sport"@en ;
-    rdfs:comment    "A sport or physical activity that a person practises or is interested in, identified by a URI."@en ;
+    rdfs:comment    "a sport or physical activity that a person practises or is interested in, identified by a URI."@en ;
     rdfs:domain     this:Person ;
     rdfs:range      rdfs:Resource .
 
 <#StudyYear>
     a               rdf:Property ;
     rdfs:label      "study year"@en ;
-    rdfs:comment    "The academic year in which the student expects to graduate or is currently enrolled, expressed as a four-digit year string."@en ;
+    rdfs:comment    "the academic year in which the student expects to graduate or is currently enrolled."@en ;
     rdfs:domain     this:Student ;
     rdfs:range      xsd:string .
 
 <#StudySubject>
     a               rdf:Property ;
     rdfs:label      "study subject"@en ;
-    rdfs:comment    "The academic programme or field of study in which a student is enrolled, identified by a URI."@en ;
+    rdfs:comment    "the academic programme or field of study in which a student is enrolled, identified by a URI."@en ;
     rdfs:domain     this:Student ;
+
     rdfs:range      rdfs:Resource .
