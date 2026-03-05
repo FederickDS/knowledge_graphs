@@ -1,0 +1,16 @@
+@base <https://federickds.github.io/knowledge_graphs/data.ttl> .
+@prefix this: <https://federickds.github.io/knowledge_graphs/vocabulary.ttl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+
+<#me> a                 this:Person, this:Student;
+    this:Name           "Federico Di Stefano"^^xsd:string;
+    this:Email          "Federico.DiStefano@UGent.be"^^xsd:string;
+    this:PlaceOfBirth   <https://www.wikidata.org/wiki/Q220>;
+    this:CityOfResidence       <https://www.wikidata.org/wiki/Q242513>;
+    this:Sport          <https://www.wikidata.org/wiki/Q105674>;
+    this:StudyYear      "2026"^^xsd:string;
+    this:StudySubject   <https://studiekiezer.ugent.be/2025/master-of-science-in-computer-science-engineering-en/programma>;
+    foaf:knows          <https://janaverl.github.io/knowledge_graphs_lab2/0001.ttl#me>,
+                        <https://hannevanoutrive.github.io/knowledge_graphs/data.ttl>,
+                        <https://lander6.github.io/knowledge-graph-assignment/data.ttl>.
