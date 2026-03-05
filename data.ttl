@@ -12,5 +12,7 @@
     this:StudyYear      "2026"^^xsd:string;
     this:StudySubject   <https://studiekiezer.ugent.be/2025/master-of-science-in-computer-science-engineering-en/programma>;
     foaf:knows          <https://janaverl.github.io/knowledge_graphs_lab2/0001.ttl#me>,
-                        <https://hannevanoutrive.github.io/knowledge_graphs/data.ttl>,
-                        <https://lander6.github.io/knowledge-graph-assignment/data.ttl>.
+                        <https://hannevanoutrive.github.io/knowledge_graphs/data.ttl#vanoutrive_hanne>,
+                        <https://lander6.github.io/knowledge-graph-assignment/data.ttl#Lander>,
+                        <https://daniel1402.github.io/knowledge-graphs-labs/data.ttl#me>.
+
