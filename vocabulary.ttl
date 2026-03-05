@@ -1,0 +1,70 @@
+@prefix this: <https://github.com/FederickDS/knowledge_graphs/vocabulary.ttl#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<#Name>
+    a               rdf:Property ;
+    rdfs:label      "name"@en ;
+    rdfs:comment    "a word or set of words by which a person or thing is known, addressed, or referred to"
+    rdfs:domain     rdfs:Resource ;
+    rdfs:range      rdfs:Literal .
+
+<#Student>
+    a               rdfs:Class ;
+    rdfs:subClassOf this:Person ;
+    rdfs:label      "student"@en ;
+    rdfs:comment    "a person who is enrolled in an academic program at an educational institution."@en .
+
+<#Person>
+    a               rdf:Class ;
+    rdfs:label      "person"@en ;
+    rdfs:comment    "a human being"@en .
+
+<#ExchangeStudent>
+    a               rdfs:Class;
+    rdfs:subClassOf this:Student;
+    rdfs:label      "exchange student"@en;
+    rdfs:comment    "a student studying abroad at one of their institutions's partner institutions."@en .
+
+<#Email>
+    a               rdf:Property ;
+    rdfs:label      "email"@en ;
+    rdfs:comment    "An electronic mail address at which a person can be contacted."@en ;
+    rdfs:domain     this:Person ;
+    rdfs:range      xsd:string .
+
+<#PlaceOfBirth>
+    a               rdf:Property ;
+    rdfs:label      "place of birth "@en ;
+    rdfs:comment    "The location where a person was born, identified by a URI (e.g. a Wikidata entity)."@en ;
+    rdfs:domain     this:Person ;
+    rdfs:range      rdfs:Resource .
+
+<#CityOfResidence>
+    a               rdf:Property ;
+    rdfs:label      "city of residence"@en ;
+    rdfs:comment    "The current place of residence or primary location of a person, identified by a URI."@en ;
+    rdfs:domain     this:Person ;
+    rdfs:range      rdfs:Resource .
+
+<#Sport>
+    a               rdf:Property ;
+    rdfs:label      "sport"@en ;
+    rdfs:comment    "A sport or physical activity that a person practises or is interested in, identified by a URI."@en ;
+    rdfs:domain     this:Person ;
+    rdfs:range      rdfs:Resource .
+
+<#StudyYear>
+    a               rdf:Property ;
+    rdfs:label      "study year"@en ;
+    rdfs:comment    "The academic year in which the student expects to graduate or is currently enrolled, expressed as a four-digit year string."@en ;
+    rdfs:domain     this:Student ;
+    rdfs:range      xsd:string .
+
+<#StudySubject>
+    a               rdf:Property ;
+    rdfs:label      "study subject"@en ;
+    rdfs:comment    "The academic programme or field of study in which a student is enrolled, identified by a URI."@en ;
+    rdfs:domain     this:Student ;
+    rdfs:range      rdfs:Resource .
