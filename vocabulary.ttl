@@ -6,7 +6,7 @@
 <#Name>
     a               rdf:Property ;
     rdfs:label      "name"@en ;
-    rdfs:comment    "a word or set of words by which a person or thing is known, addressed, or referred to"@en;
+    rdfs:comment    "a word or set of words by which a person or thing is known, addressed, or referred to"@en ;
     rdfs:domain     rdfs:Resource ;
     rdfs:range      rdfs:Literal .
 
@@ -68,6 +68,7 @@
     rdfs:comment    "the academic programme or field of study in which a student is enrolled, identified by a URI."@en ;
     rdfs:domain     this:Student ;
     rdfs:range      rdfs:Resource .
+
 
 
 
