@@ -6,7 +6,7 @@
 
 <#me> a                 this:Person, this:Student;
     foaf:name           "Federico Di Stefano"^^xsd:string;
-    this:enrolledIn     <#knowledge-graphs-2025> .
+    this:enrolledIn     <#knowledge-graphs-2025>;
     this:Email          "Federico.DiStefano@UGent.be"^^xsd:string;
     this:PlaceOfBirth   <https://www.wikidata.org/wiki/Q220>;
     this:CityOfResidence       <https://www.wikidata.org/wiki/Q242513>;
@@ -21,3 +21,4 @@
 <#knowledge-graphs-2025> a this:Course ;
     this:name           "Knowledge Graphs 2025" ;
     rdfs:seeAlso        <https://studiekiezer.ugent.be/studiefiche/nl/E018160/2025> .
+
