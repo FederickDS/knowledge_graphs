@@ -14,11 +14,22 @@
     rdfs:label      "person"@en ;
     rdfs:comment    "a human being"@en .
 
-<#exchange_student>
+<#exchangeStudent>
     a               rdfs:Class;
     rdfs:subClassOf this:student;
     rdfs:label      "exchange student"@en;
     rdfs:comment    "a student studying abroad at one of their institutions's partner institutions."@en .
+
+<#course>
+    a            rdfs:Class;
+    rdfs:label   "course"@en ;
+    rdfs:comment "an academic course or module."@en .
+
+<#photograph>
+    a               rdfs:Class ;
+    rdfs:subClassOf foaf:Image ;
+    rdfs:label      "photograph"@en ;
+    rdfs:comment    "a photographic image, typically depicting people or places."@en .
 
 <#name>
     a               rdf:Property ;
@@ -34,14 +45,14 @@
     rdfs:domain     this:person ;
     rdfs:range      xsd:string .
 
-<#place_of_birth>
+<#placeOfBirth>
     a               rdf:Property ;
     rdfs:label      "place of birth "@en ;
     rdfs:comment    "the location where a person was born, identified by a URI (e.g. a Wikidata entity)."@en ;
     rdfs:domain     this:person ;
     rdfs:range      rdfs:Resource .
 
-<#city_of_residence>
+<#cityOfResidence>
     a               rdf:Property ;
     rdfs:label      "city of residence"@en ;
     rdfs:comment    "the current place of residence or primary location of a person, identified by a URI."@en ;
@@ -55,20 +66,62 @@
     rdfs:domain     this:person ;
     rdfs:range      rdfs:Resource .
 
-<#study_year>
+<#studyYear>
     a               rdf:Property ;
     rdfs:label      "study year"@en ;
     rdfs:comment    "the academic year in which the student expects to graduate or is currently enrolled."@en ;
     rdfs:domain     this:student ;
     rdfs:range      xsd:string .
 
-<#study_subject>
+<#studySubject>
     a               rdf:Property ;
     rdfs:label      "study subject"@en ;
     rdfs:comment    "the academic programme or field of study in which a student is enrolled, identified by a URI."@en ;
     rdfs:domain     this:student ;
     rdfs:range      rdfs:Resource .
 
+<#enrolledIn>
+    a            rdf:Property ;
+    rdfs:label   "enrolled in"@en ;
+    rdfs:comment " a course or programme in which the student is enrolled. "@en ;
+    rdfs:domain  this:student ;
+    rdfs:range   this:course .
 
+<#title>
+    a               rdf:Property ;
+    rdfs:label      "title"@en ;
+    rdfs:comment    "the title or name of a photograph."@en ;
+    rdfs:domain     this:photograph ;
+    rdfs:range      xsd:string .
+
+<#takenBy>
+    a                  rdf:Property ;
+    rdfs:subPropertyOf foaf:maker ;
+    rdfs:label         "taken by"@en ;
+    rdfs:comment       "the photographer or creator of the photograph."@en ;
+    rdfs:domain        this:photograph ;
+    rdfs:range         this:person .
+
+<#depicts>
+    a                  rdf:Property ;
+    rdfs:subPropertyOf foaf:depicts ;
+    rdfs:label         "depicts"@en ;
+    rdfs:comment       "a person shown in the photograph."@en ;
+    rdfs:domain        this:photograph ;
+    rdfs:range         this:person .
+
+<#takenAt>
+    a               rdf:Property ;
+    rdfs:label      "taken at"@en ;
+    rdfs:comment    "the place or location where the photograph was taken."@en ;
+    rdfs:domain     this:photograph ;
+    rdfs:range      rdfs:Resource .
+
+<#summary>
+    a               rdf:Property ;
+    rdfs:label      "summary"@en ;
+    rdfs:comment    "a textual description or summary of the photograph."@en ;
+    rdfs:domain     this:photograph ;
+    rdfs:range      xsd:string .
 
 
