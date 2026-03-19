@@ -3,70 +3,70 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<#Name>
+<#student>
+    a               rdfs:Class ;
+    rdfs:subClassOf this:person ;
+    rdfs:label      "student"@en ;
+    rdfs:comment    "a person who is enrolled in an academic program at an educational institution."@en .
+
+<#person>
+    a               rdfs:Class ;
+    rdfs:label      "person"@en ;
+    rdfs:comment    "a human being"@en .
+
+<#exchange_student>
+    a               rdfs:Class;
+    rdfs:subClassOf this:student;
+    rdfs:label      "exchange student"@en;
+    rdfs:comment    "a student studying abroad at one of their institutions's partner institutions."@en .
+
+<#name>
     a               rdf:Property ;
     rdfs:label      "name"@en ;
     rdfs:comment    "a word or set of words by which a person or thing is known, addressed, or referred to"@en ;
     rdfs:domain     rdfs:Resource ;
     rdfs:range      rdfs:Literal .
 
-<#Student>
-    a               rdfs:Class ;
-    rdfs:subClassOf this:Person ;
-    rdfs:label      "student"@en ;
-    rdfs:comment    "a person who is enrolled in an academic program at an educational institution."@en .
-
-<#Person>
-    a               rdfs:Class ;
-    rdfs:label      "person"@en ;
-    rdfs:comment    "a human being"@en .
-
-<#ExchangeStudent>
-    a               rdfs:Class;
-    rdfs:subClassOf this:Student;
-    rdfs:label      "exchange student"@en;
-    rdfs:comment    "a student studying abroad at one of their institutions's partner institutions."@en .
-
-<#Email>
+<#email>
     a               rdf:Property ;
     rdfs:label      "email"@en ;
     rdfs:comment    "an electronic mail address at which a person can be contacted."@en ;
-    rdfs:domain     this:Person ;
+    rdfs:domain     this:person ;
     rdfs:range      xsd:string .
 
-<#PlaceOfBirth>
+<#place_of_birth>
     a               rdf:Property ;
     rdfs:label      "place of birth "@en ;
     rdfs:comment    "the location where a person was born, identified by a URI (e.g. a Wikidata entity)."@en ;
-    rdfs:domain     this:Person ;
+    rdfs:domain     this:person ;
     rdfs:range      rdfs:Resource .
 
-<#CityOfResidence>
+<#city_of_residence>
     a               rdf:Property ;
     rdfs:label      "city of residence"@en ;
     rdfs:comment    "the current place of residence or primary location of a person, identified by a URI."@en ;
-    rdfs:domain     this:Person ;
+    rdfs:domain     this:person ;
     rdfs:range      rdfs:Resource .
 
-<#Sport>
+<#sport>
     a               rdf:Property ;
     rdfs:label      "sport"@en ;
     rdfs:comment    "a sport or physical activity that a person practises or is interested in, identified by a URI."@en ;
-    rdfs:domain     this:Person ;
+    rdfs:domain     this:person ;
     rdfs:range      rdfs:Resource .
 
-<#StudyYear>
+<#study_year>
     a               rdf:Property ;
     rdfs:label      "study year"@en ;
     rdfs:comment    "the academic year in which the student expects to graduate or is currently enrolled."@en ;
-    rdfs:domain     this:Student ;
+    rdfs:domain     this:student ;
     rdfs:range      xsd:string .
 
-<#StudySubject>
+<#study_subject>
     a               rdf:Property ;
     rdfs:label      "study subject"@en ;
     rdfs:comment    "the academic programme or field of study in which a student is enrolled, identified by a URI."@en ;
-    rdfs:domain     this:Student ;
+    rdfs:domain     this:student ;
     rdfs:range      rdfs:Resource .
 
 
