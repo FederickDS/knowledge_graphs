@@ -28,7 +28,7 @@
     this:depicts     <#me> ;
     this:takenAt      <https://www.wikidata.org/wiki/Q180901> ;
     this:summary      "Selfie took at the Atomium in brussel, in one of the last days of february, 2026"^^xsd:string ;
-    foaf:depiction    <https://federickds.github.io/knowledge_graphs/atomium.jpeg>
+    foaf:depiction    <https://federickds.github.io/knowledge_graphs/atomium.jpeg> .
 
 <#photoBeatlesWax> a  this:photograph ;
     this:title        "Beatles wax statue"^^xsd:string ;
@@ -36,7 +36,7 @@
     this:depicts      <https://www.wikidata.org/wiki/Q1299> ;
     this:takenAt      <https://www.wikidata.org/wiki/Q104853511> ;
     this:summary      "Photo of the beatles wax statue taken in 2006"^^xsd:string ;
-    foaf:depiction    <https://www.wikidata.org/wiki/Q215380#/media/File:The_Beatles_wax_dummes_(2).jpg> .
+    foaf:depiction    <https://upload.wikimedia.org/wikipedia/commons/6/6c/The_Beatles_wax_dummes_%282%29.jpg> .
 
 <#photoSelfieCampusUFO> a this:photograph;
     this:title           "Federico at Campus UFO"^^xsd:string ;
