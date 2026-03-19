@@ -6,13 +6,13 @@
 
 <#me> a                 this:person, this:student;
     foaf:name           "Federico Di Stefano"^^xsd:string;
-    this:enrolled_in     <#knowledge-graphs-2025>;
+    this:enrolledIn     <#knowledge-graphs-2025>;
     this:email          "Federico.DiStefano@UGent.be"^^xsd:string;
-    this:place_of_birth   <https://www.wikidata.org/wiki/Q220>;
-    this:city_of_residence       <https://www.wikidata.org/wiki/Q242513>;
+    this:placeOfBirth   <https://www.wikidata.org/wiki/Q220>;
+    this:cityOfResidence       <https://www.wikidata.org/wiki/Q242513>;
     this:sport          <https://www.wikidata.org/wiki/Q105674>;
-    this:study_year      "2026"^^xsd:string;
-    this:study_subject   <https://studiekiezer.ugent.be/2025/master-of-science-in-computer-science-engineering-en/programma>;
+    this:studyYear      "2026"^^xsd:string;
+    this:studySubject   <https://studiekiezer.ugent.be/2025/master-of-science-in-computer-science-engineering-en/programma>;
     foaf:knows          <https://janaverl.github.io/knowledge_graphs_lab2/0001.ttl#me>,
                         <https://hannevanoutrive.github.io/knowledge_graphs/data.ttl#vanoutrive_hanne>,
                         <https://lander6.github.io/knowledge-graph-assignment/data.ttl#Lander>,
@@ -22,3 +22,26 @@
     this:name           "Knowledge Graphs 2025" ;
     rdfs:seeAlso        <https://studiekiezer.ugent.be/studiefiche/nl/E018160/2025> .
 
+<#photoSelfieBrussels> a  this:photograph ;
+    this:title        "Federico visits the Atomium"^^xsd:string ;
+    this:takenBy      <#me> ;
+    this:depicts     <#me> ;
+    this:takenAt      <https://www.wikidata.org/wiki/Q180901> ;
+    this:summary      "Selfie took at the Atomium in brussel, in one of the last days of february, 2026"^^xsd:string ;
+    foaf:depiction    <https://federickds.github.io/knowledge_graphs/atomium.jpeg>
+
+<#photoBeatlesWax> a  this:photograph ;
+    this:title        "Beatles wax statue"^^xsd:string ;
+    this:takenBy      <#me> ;
+    this:depicts      <https://www.wikidata.org/wiki/Q1299> ;
+    this:takenAt      <https://www.wikidata.org/wiki/Q104853511> ;
+    this:summary      "Photo of the beatles wax statue taken in 2006"^^xsd:string ;
+    foaf:depiction    <https://www.wikidata.org/wiki/Q215380#/media/File:The_Beatles_wax_dummes_(2).jpg> .
+
+<#photoSelfieCampusUFO> a this:photograph;
+    this:title           "Federico at Campus UFO"^^xsd:string ;
+    this:takenBy         <#me> ;
+    this:depicts         <#me> ;
+    this:takenAt         <https://www.wikidata.org/wiki/Q1137665> ;
+    this:summary         "Photo took at Campus UFO on the first monday of march 2026"^^xsd:string ;
+    foaf:depiction       <https://federickds.github.io/knowledge_graphs/fuoriDaQui.jpeg> .
