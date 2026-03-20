@@ -12,17 +12,18 @@
 
 <#person>
     a               rdfs:Class ;
+    rdfs:subClassOf foaf:Person ; 
     rdfs:label      "person"@en ;
     rdfs:comment    "a human being"@en .
 
 <#exchangeStudent>
-    a               rdfs:Class;
-    rdfs:subClassOf this:student;
-    rdfs:label      "exchange student"@en;
+    a               rdfs:Class ;
+    rdfs:subClassOf this:student ;
+    rdfs:label      "exchange student"@en ;
     rdfs:comment    "a student studying abroad at one of their institutions's partner institutions."@en .
 
 <#course>
-    a            rdfs:Class;
+    a            rdfs:Class ;
     rdfs:label   "course"@en ;
     rdfs:comment "an academic course or module."@en .
 
@@ -33,11 +34,12 @@
     rdfs:comment    "a photographic image, typically depicting people or places."@en .
 
 <#name>
-    a               rdf:Property ;
-    rdfs:label      "name"@en ;
-    rdfs:comment    "a word or set of words by which a person or thing is known, addressed, or referred to"@en ;
-    rdfs:domain     rdfs:Resource ;
-    rdfs:range      rdfs:Literal .
+    a                  rdf:Property ;
+    rdfs:subPropertyOf foaf:name ;
+    rdfs:label         "name"@en ;
+    rdfs:comment       "a word or set of words by which a person or thing is known, addressed, or referred to"@en ;
+    rdfs:domain        rdfs:Resource ;
+    rdfs:range         rdfs:Literal .
 
 <#email>
     a               rdf:Property ;
